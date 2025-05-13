@@ -15,4 +15,10 @@ class PersegiPanjang{
 
 class BangunDatar{
     private:
+         float panjang;
+         float lebar;
+         float hitungLuas(){
+            return panjang * lebar;
+    };
+    float
 }
