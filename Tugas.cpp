@@ -20,5 +20,33 @@ class BangunDatar{
          float hitungLuas(){
             return panjang * lebar;
     };
-    float
+    float hitungkeliling(){
+        return 2 * (panjang * lebar);
+
+    };
+public:
+    //untuk mengakses panjang dan lebar
+    friend void PersegiPanjang::inputData(BangunDatar &bd);
+    //untuk megakses fungsi
+    friend void PersegiPanjang::outputData(BangunDatar &bd);
+
+};
+
+void PersegiPanjang::inputData(BangunDatar &bd){
+    cout << "Masukkan Panjang : ";
+    cin >> bd.panjang;
+    cout << "Masukkan Lebar : ";
+    cin >> bd.lebar;
 }
+
+void PersegiPanjang::outputData(BangunDatar &bd){
+    cout << "Luas : " << bd.hitungLuas() << endl;
+    cout << "Keliling : " << bd.hitungkeliling() << endl;
+};
+
+int main() {
+    PersegiPanjang pP;
+    BangunDatar bD;
+    pP.inputData(bD);
+    pP.outputData(bD);
+};
