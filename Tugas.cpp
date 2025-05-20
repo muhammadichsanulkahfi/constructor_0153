@@ -1,4 +1,10 @@
 // Buatlah sebuah class bernama bangunDatar yang memiliki member sebagai berikut:
+// panjang, lebar, method hitungLuas dan hitungKeliling
+// Buatlah class persegiPanjang yang memiliki member inputdata dan outputdata
+// Buatlah member yang ada di class persegi panjang
+// dapat mengakses member di bangun datar
+// gunakan pointer untuk megakses member yang ada pada class bangundatar
+
 
 #include <iostream>
 using namespace std;
